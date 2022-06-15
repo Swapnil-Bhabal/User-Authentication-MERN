@@ -1,0 +1,25 @@
+{
+  "name": "user-login-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swapnil-Bhabal/User-Authentication-MERN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swapnil-Bhabal/User-Authentication-MERN/issues"
+  },
+  "homepage": "https://github.com/Swapnil-Bhabal/User-Authentication-MERN#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
