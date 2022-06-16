@@ -1,6 +1,8 @@
 import { useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterScreen = () => {
+    const history = useNavigate();
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -21,7 +23,9 @@ const RegisterScreen = () => {
     
         const data = await response.json();
     
-        console.log(data);
+        if(data.status === 'ok') {
+            history.push('/login');
+        }
     }
     
     return (

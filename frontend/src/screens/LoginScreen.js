@@ -18,8 +18,14 @@ const LoginScreen = () => {
         });
     
         const data = await response.json();
-    
         console.log(data);
+        
+        if(data.user) {
+            localStorage.setItem('token', data.user);
+            alert('Login Succesful');
+        } else {
+            alert('Please check your username and password');
+        }
     }
     
     return (
